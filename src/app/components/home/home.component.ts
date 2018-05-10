@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +12,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  endDate: moment.Moment = moment("20190216")
+  today: moment.Moment = moment();
+
+  countdown: number = this.endDate.diff(this.today, "days");
 
 }
