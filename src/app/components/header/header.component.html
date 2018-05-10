@@ -5,12 +5,12 @@
   </div>
   <div>
     <nav class="nav-bar">
-      <a routerLink="/" routerLinkActive="active">Home</a>
-      <a routerLink="/wedding" routerLinkActive="active">Wedding Details</a>
-      <a routerLink="/activities" routerLinkActive="active">Activities</a>
-      <a routerLink="/our-story" routerLinkActive="active">Our Story</a>
-      <a routerLink="/registry" routerLinkActive="active">Registry</a>
-      <a routerLink="/honeymoon" routerLinkActive="active">Honeymoon</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/wedding" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Wedding Details</a>
+      <a routerLink="/activities" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Activities</a>
+      <a routerLink="/our-story" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Our Story</a>
+      <a routerLink="/registry" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Registry</a>
+      <a routerLink="/honeymoon" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Honeymoon</a>
     </nav>
   </div>
 </div>
