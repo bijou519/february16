@@ -3,3 +3,18 @@
 .global-font {
     font-family: 'Raleway', sans-serif;
 }
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url("/assets/bkg_img_gold.png");
+
+    height: 100%; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

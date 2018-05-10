@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(255, 239, 250);
+    background-color: rgba(255, 239, 250, 0.20);
 }
 
 .nav-bar a {
