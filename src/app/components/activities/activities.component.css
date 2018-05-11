@@ -1,0 +1,23 @@
+/* .embeddedMap {
+    height: 100%;
+    width: 87%;
+    border: 0;
+} */
+
+.activities-map-view {
+    /* display: block !important;
+    left: auto !important; */
+    /* top: 144px !important; */
+    /* width: 34% !important; */
+}
+ 
+.map-container {
+    padding: 30px;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+    
+.map-container img {
+    /* max-width: 500px !important; */
+}

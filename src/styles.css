@@ -18,3 +18,15 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.width-67-percent {
+    width: 67%
+}
+
+.width-33-percent {
+    width: 33%
+}
+
+.display-inline {
+    display: inline-block;
+}
