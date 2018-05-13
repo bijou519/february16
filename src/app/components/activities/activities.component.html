@@ -1,6 +1,9 @@
 <div class="">
-  <div class="col-md-6">
-    CONTENT WOULD GO HERE
+  <div class="col-md-6 ">
+    <div>The Twin Cities are full of things to do year round. We created a list of destinations that are worth checking out if you have some extra time. </div>
+    <ul *ngFor="let place of locations">
+      <li>{{place.name}}</li>
+    </ul>
   </div>
   <div class="col-md-6">
     <div class="activities-map-view">
