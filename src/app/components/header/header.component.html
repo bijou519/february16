@@ -3,14 +3,40 @@
   <div style="text-align:center">
     <h1>H&M</h1>
   </div>
-  <div>
-    <nav class="nav-bar">
+  <!-- <div>
+    <nav id="navigation" class="custom-nav-bar">
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
       <a routerLink="/wedding" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Wedding Details</a>
       <a routerLink="/activities" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Activities</a>
       <a routerLink="/our-story" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Our Story</a>
       <a routerLink="/registry" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Registry</a>
       <a routerLink="/honeymoon" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Honeymoon</a>
+      <a href="javascript:void(0);" class="icon" (click)="myFunction()"></a>
     </nav>
-  </div>
+  </div> -->
+  <div>
+
+  <nav class="navbar custom-nav-css">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li data-toggle="collapse" data-target="#myNavbar"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+            <li data-toggle="collapse" data-target="#myNavbar"><a routerLink="/wedding" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Wedding Details</a></li>
+            <li data-toggle="collapse" data-target="#myNavbar"><a routerLink="/activities" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Activities</a></li>
+            <li data-toggle="collapse" data-target="#myNavbar"><a routerLink="/our-story" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Our Story</a></li>
+            <li data-toggle="collapse" data-target="#myNavbar"><a routerLink="/registry" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Registry</a></li>
+            <li data-toggle="collapse" data-target="#myNavbar"><a routerLink="/honeymoon" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Honeymoon</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+      
 </div>

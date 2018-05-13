@@ -1,26 +1,41 @@
-.nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.custom-nav-css {
     background-color: rgba(255, 239, 250, 0.20);
-}
-
-.nav-bar a {
-    float: left;
-    display: block;
     color: black;
     text-align: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    text-decoration: none;
-    width: 16.6%; /** 100% divided by 6 **/
 }
 
-.nav-bar a:hover:not(.active) {
+.custom-nav-css li a {
+    color: black;
+    text-align: center;    
+}
+
+.custom-nav-css a:hover:not(.active) {
     background-color: rgb(255, 175, 228);
 }
 
 .active {
     background-color: rgb(252, 76, 193);
+}
+
+.navbar-toggle > .icon-bar {
+    background-color: black;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .custom-nav-css li a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;    
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-decoration: none;
+    }
+
+    .custom-nav-css ul {
+        width:100%;
+        margin: 0 auto;
+    }
+
 }

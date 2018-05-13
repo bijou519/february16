@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   title = 'header';
+
+  currentPage: String = "Home";
+
+  myFunction () {
+    var x = document.getElementById("navigation");
+    if (x.className === "custom-nav-bar") {
+        x.className += " responsive";
+    } else {
+        x.className = "custom-nav-bar";
+    }
+  }
 }
