@@ -11,6 +11,7 @@ import { RegistryComponent } from './components/registry/registry.component';
 import { HoneymoonComponent } from './components/honeymoon/honeymoon.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     RegistryComponent,
     HoneymoonComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     RouterModule.forRoot(
