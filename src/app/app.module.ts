@@ -21,10 +21,10 @@ const appRoutes: Routes = [
   { path: 'honeymoon', component: HoneymoonComponent },
   { path: 'registry', component: RegistryComponent },
   { path: 'login', component: LoginComponent },
-  { path: '404', component: LoginComponent },
-  { path: '403', component: LoginComponent },
-  { path: '302', component: LoginComponent },
-  { path: '**', component: LoginComponent }
+  { path: '404', redirectTo: 'login' },
+  { path: '403', redirectTo: 'login' },
+  { path: '302', redirectTo: 'login' },
+  { path: '**', redirectTo: 'login' },
 ];
 
 @NgModule({

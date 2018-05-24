@@ -1,0 +1,23 @@
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.login-form-container {
+    min-height: 100vh;
+}
+
+.login-form {
+    font-size: 20px;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+    height: 20vh;
+}
+
+.login-form > .input-group > input {
+    font-size: 20px;
+}
