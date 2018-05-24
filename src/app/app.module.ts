@@ -20,7 +20,11 @@ const appRoutes: Routes = [
   { path: 'our-story', component: OurStoryComponent },
   { path: 'honeymoon', component: HoneymoonComponent },
   { path: 'registry', component: RegistryComponent },
-  // { path: '**', component: PageNotFoundComponent }
+  { path: 'login', component: LoginComponent },
+  { path: '404', component: LoginComponent },
+  { path: '403', component: LoginComponent },
+  { path: '302', component: LoginComponent },
+  { path: '**', component: LoginComponent }
 ];
 
 @NgModule({
