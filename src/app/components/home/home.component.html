@@ -1,3 +1,55 @@
-<div class="countdown-clock">
+<div class="col-md-12 countdown-clock">
   {{countdown}} days until we say "I do!"
+</div>
+
+<div *ngIf="weatherDataAvailable" class="col-md-12 weather-component text-align-center padding-top-20px">
+  <div class="col-md-12">
+    Current weather in Minneapolis, MN
+  </div>
+  <div class="col-md-12 current-weather-container">
+    <div class="temperature">
+      <span>
+        <img class="weather-icon" [src]="weatherIcon" alt/>
+      </span>
+      {{weatherData.currently.temperature}} &deg;F
+    </div>
+    <div class="weather-description">{{weatherData.currently.summary}}</div>
+
+    <table class="table weather-table">
+      <tr class="table-row">
+        <td class="table-data-title">Chance of precipitation</td>
+        <td class="table-data-value">{{weatherData.currently.precipProbability}}%</td>
+      </tr>
+      <tr class="table-row">
+        <td class="table-data-title">Dew Point</td>
+        <td class="table-data-value">{{weatherData.currently.dewPoint}}&deg;</td>
+      </tr>
+      <tr class="table-row">
+        <td class="table-data-title">Humidity</td>
+        <td class="table-data-value">{{weatherData.currently.humidity * 100}}%</td>
+      </tr>
+      <tr class="table-row">
+        <td class="table-data-title">UV Index</td>
+        <td class="table-data-value">{{weatherData.currently.uvIndex}} of 10</td>
+      </tr>
+      <tr class="table-row">
+          <td class="table-data-title">Visibility</td>
+          <td class="table-data-value">{{weatherData.currently.visibility}} miles</td>
+      </tr>
+      <tr class="table-row">
+          <td class="table-data-title">Wind</td>
+          <td class="table-data-value">{{weatherData.currently.windSpeed}} mph</td>
+      </tr>
+      <tr class="table-row">
+          <td class="table-data-title">Cloud Cover</td>
+          <td class="table-data-value">{{cloudCover}}%</td>
+      </tr>
+    </table>
+
+    <div class="as-of">Conditions as of {{conditionsAsOf}}</div>
+
+    <div class="dark-sky">
+      <a href="">Powered by Dark Sky</a>
+    </div>
+  </div>
 </div>

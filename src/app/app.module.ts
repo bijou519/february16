@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 
 import { LoginService } from '../app/services/login.service';
+import { WeatherService } from '../app/services/weather.service';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -50,7 +51,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
   ],
-  providers: [ LoginService ],
+  providers: [ LoginService, WeatherService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

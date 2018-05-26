@@ -7,10 +7,8 @@ import { catchError, retry } from 'rxjs/operators';
 import { constants } from '../../assets/constants';
 
 @Injectable()
-export class LoginService {
+export class WeatherService {
   constructor(private http: HttpClient) { }
-
-  isLoggedIn = (localStorage.getItem('validUser') === 'true');
 
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
@@ -29,17 +27,19 @@ export class LoginService {
   }
 
 
-  getOptions() {
-    return {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    };
+  getOptions () {
+      return {
+        headers: new HttpHeaders({
+          // 'Access-Control-Allow-Origin': '*',
+          'Content-Type':  'application/json'
+          // ,'Accept-Encoding': 'gzip'
+        })
+      };
   }
 
-  sendPassword(password: string) {
-    return this.http.post(constants.loginAPI, { 'password': password }, this.getOptions())
-      .pipe(
+  getCurrentWeather () {
+    return this.http.get(constants.weatherAPI, this.getOptions())
+    .pipe(
         catchError(this.handleError)
       );
   }

@@ -3,3 +3,45 @@
     font-size: 24px;
     text-align: center;
 }
+
+.temperature {
+    text-align: center;
+    font-size: 36px;
+}
+
+.metric-val {
+    font-size: 14px;
+}
+
+.as-of {
+    font-size: 10px;
+}
+
+.weather-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.weather-description {
+    font-size: 14px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.padding-top-20px {
+    padding-top: 20px;
+}
+
+.weather-table {
+    font-size: 14px;
+}
+
+.table-data-title {
+    text-align: left;
+}
+
+.table-data-value {
+    text-align: right;
+}
