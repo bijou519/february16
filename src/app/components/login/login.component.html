@@ -4,9 +4,9 @@
     <div class="text-centered login-form">
       <label for="pwd1">Please enter a password: </label>
       <div class="input-group">
-        <input type="password" class="form-control" id="pwd1" placeholder="Password">
+        <input type="password" class="form-control" id="pwd1" placeholder="Password" [(ngModel)]="pwd1">
         <span class="input-group-btn">
-          <button class="btn btn-primary" type="button">Go</button>
+          <button class="btn btn-primary" type="button" (click)="clickGo()">Go</button>
         </span>
       </div>
     </div>

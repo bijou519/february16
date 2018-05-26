@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,6 +15,8 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 
+import { LoginService } from '../app/services/login.service';
+
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'wedding', component: WeddingComponent },
@@ -21,9 +25,6 @@ const appRoutes: Routes = [
   { path: 'honeymoon', component: HoneymoonComponent },
   { path: 'registry', component: RegistryComponent },
   { path: 'login', component: LoginComponent },
-  { path: '404', redirectTo: 'login' },
-  { path: '403', redirectTo: 'login' },
-  { path: '302', redirectTo: 'login' },
   { path: '**', redirectTo: 'login' },
 ];
 
@@ -43,11 +44,13 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: false } // <-- debugging purposes only
     ),
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [ LoginService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

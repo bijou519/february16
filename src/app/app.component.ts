@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { RouterModule, Routes, Router } from '@angular/router';
+
+import { LoginService } from '../app/services/login.service';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +10,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  loggedIn = false;
 
-  userIsLoggedIn () {
-    if (window.location.pathname !== '/login') {
-      this.loggedIn = true;
+  constructor ( private loginService: LoginService, private router: Router ) {
+    this.isLoggedIn();
+    if (this.loginService.isLoggedIn === false) {
+      router.navigate(['login']);
     }
-    console.log('user is logged in: ', this.loggedIn);
-    return this.loggedIn;
   }
+
+  isLoggedIn () {
+    console.log(this.loginService.isLoggedIn);
+    return this.loginService.isLoggedIn;
+  }
+
 }
