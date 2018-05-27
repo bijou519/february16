@@ -21,3 +21,8 @@
 .login-form > .input-group > input {
     font-size: 20px;
 }
+
+.login-error {
+    color: rgb(150, 0, 25);
+    font-weight: 700;
+}

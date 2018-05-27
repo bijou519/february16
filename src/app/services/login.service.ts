@@ -5,6 +5,7 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
 import { constants } from '../../assets/constants';
+import { Login } from './login.interface';
 
 @Injectable()
 export class LoginService {
@@ -38,7 +39,7 @@ export class LoginService {
   }
 
   sendPassword(password: string) {
-    return this.http.post(constants.loginAPI, { 'password': password }, this.getOptions())
+    return this.http.post<Login>(constants.loginAPI, { 'password': password }, this.getOptions())
       .pipe(
         catchError(this.handleError)
       );
