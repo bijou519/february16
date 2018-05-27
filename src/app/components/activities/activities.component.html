@@ -1,8 +1,13 @@
 <div class="">
   <div class="col-md-6 ">
-    <div>The Twin Cities are full of things to do year round. We created a list of destinations that are worth checking out if you have some extra time. </div>
-    <ul *ngFor="let place of locations">
-      <li>{{place.name}}</li>
+    <div>The Twin Cities are full of things to do year round. We created a list of destinations that are worth checking out if
+      you have some extra time. </div>
+    <ul class="places-list">
+      <ng-container *ngFor="let place of locations">
+        <li *ngIf="place.inList">
+          <a class="" href="{{place.website}}">{{place.name}}</a>
+        </li>
+      </ng-container>
     </ul>
   </div>
   <div class="col-md-6">

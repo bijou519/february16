@@ -18,7 +18,7 @@ export class ActivitiesComponent implements OnInit {
     ngOnInit() {
         var mapProp = {
             center: new google.maps.LatLng(44.9396861,-93.1760935),
-            zoom: 11,
+            zoom: 10,
             styles: mapStyles,
             mapTypeControl: false,
             zoomControl: true,

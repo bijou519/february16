@@ -3,3 +3,7 @@
     width: 100%;
     position: relative;
 }
+
+.places-list {
+    font-size: 12px;
+}
