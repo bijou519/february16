@@ -30,17 +30,15 @@ export class WeatherService {
   getOptions () {
       return {
         headers: new HttpHeaders({
-          // 'Access-Control-Allow-Origin': '*',
           'Content-Type':  'application/json'
-          // ,'Accept-Encoding': 'gzip'
         })
       };
   }
 
   getCurrentWeather () {
-    return this.http.get(constants.weatherAPI, this.getOptions())
-    .pipe(
-        catchError(this.handleError)
+    return this.http.get(constants.weatherAPIMocked, this.getOptions())
+      .pipe(
+          catchError(this.handleError)
       );
   }
 

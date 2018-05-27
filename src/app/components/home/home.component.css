@@ -35,6 +35,8 @@
 }
 
 .weather-table {
+    margin: 0 auto;
+    max-width: 600px;
     font-size: 14px;
 }
 
@@ -44,4 +46,8 @@
 
 .table-data-value {
     text-align: right;
+}
+
+.dark-sky {
+    font-size: 8px;
 }

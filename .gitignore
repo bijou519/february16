@@ -4,7 +4,7 @@
 /dist
 /tmp
 /out-tsc
-/src/assets/weather/SVG
+/src/assets/weather/PNG
 /src/assets/constants.ts
 
 # dependencies

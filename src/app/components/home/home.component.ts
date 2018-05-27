@@ -16,14 +16,9 @@ export class HomeComponent implements OnInit {
   countdown: number = this.endDate.diff(this.today, 'days');
 
   weatherDataAvailable: Boolean = false;
-
   weatherData: any;
-
-  cloudCover: Number;
-
-    conditionsAsOf: string;
-
-    weatherIcon = '../../assets/weather/SVG/Sun.svg';
+  conditionsAsOf: string;
+  weatherIcon: string;
 
 
   constructor(private weatherService: WeatherService ) { }
@@ -36,12 +31,10 @@ export class HomeComponent implements OnInit {
     this.weatherService.getCurrentWeather()
       .subscribe(response => {
         if (response) {
-          console.log(response);
           this.weatherData = response;
           this.weatherDataAvailable = true;
           this.conditionsAsOf = moment.unix(this.weatherData.currently.time).format('h:mm A');
-
-          this.cloudCover = this.weatherData.currently.cloudCover * 100;
+          this.weatherIcon = '../../assets/weather/PNG/' + this.weatherData.currently.icon + '.png';
         }
       });
   }
