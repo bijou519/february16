@@ -4,8 +4,10 @@
 /dist
 /tmp
 /out-tsc
+/src/assets/images
 /src/assets/weather/PNG
 /src/assets/constants.ts
+/src/assets/content.ts
 
 # dependencies
 /node_modules
