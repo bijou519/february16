@@ -1,0 +1,34 @@
+.padding-10px {
+    padding: 10px;
+}
+
+.hotel-area {
+    padding: 5px;
+}
+
+.coming-soon {
+    padding: 5px;
+}
+
+.coming-soon .details {
+    background-color: rgba(235, 235, 235, 0.50) !important;
+}
+
+.details {
+    padding: 10px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    /* background-color: rgba(255, 251, 242, 0.5); */
+}
+
+.details > div {
+    padding: 10px;
+}
+
+.title {
+    size: 16px;
+}
+
+.venue-address {
+    padding-left: 10px;
+}

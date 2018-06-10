@@ -30,7 +30,7 @@ export var mapJSON = [
         "altitude": "0",
         "hours":"",
         "website": "https://www.earlebrown.com",
-        "inList": true
+        "inList": false
     },
     {
         "name": "Minneapolis Central Library",

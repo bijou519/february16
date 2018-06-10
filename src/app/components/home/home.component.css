@@ -4,6 +4,12 @@
     text-align: center;
 }
 
+.save-the-date {
+    padding: 10px;
+    font-size: 36px;
+    text-align: center;
+}
+
 .temperature {
     text-align: center;
     font-size: 36px;
