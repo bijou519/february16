@@ -40,3 +40,17 @@ body, html {
 .display-inline {
     display: inline-block;
 }
+
+#global-body-style {
+    padding:10px;
+}
+
+.gold {
+    border: 0.5px solid rgba(202,187,88);
+    background-color:  rgba(202,187,88);
+    color:  rgba(202,187,88);
+}
+
+.gold-text {
+    color:  rgba(202,187,88);
+}
