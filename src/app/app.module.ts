@@ -23,8 +23,8 @@ const appRoutes: Routes = [
   { path: 'wedding', component: WeddingComponent },
   { path: 'activities', component: ActivitiesComponent },
   { path: 'our-story', component: OurStoryComponent },
-  { path: 'honeymoon', component: HoneymoonComponent },
-  { path: 'registry', component: RegistryComponent },
+  // { path: 'honeymoon', component: HoneymoonComponent },
+  // { path: 'registry', component: RegistryComponent },
   { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: 'login' },
 ];
