@@ -1,5 +1,6 @@
 .custom-nav-css {
-    background-color: rgba(255, 239, 250, 0.20);
+    /* background-color: rgba(255, 239, 250, 0.20); */
+    /* background-color: rgb(255, 230, 230);  */
     color: black;
     text-align: center;
 }
@@ -9,12 +10,17 @@
     text-align: center;    
 }
 
+.custom-nav-css li a.active {
+    color: white;
+}
+
 .custom-nav-css a:hover:not(.active) {
-    background-color: rgb(255, 175, 228);
+    background-color: rgb(255, 230, 230);
 }
 
 .active {
-    background-color: rgb(252, 76, 193);
+    background-color: rgb(128, 0, 0);
+    color:white;
 }
 
 .navbar-toggle > .icon-bar {
@@ -36,6 +42,10 @@
     .custom-nav-css ul {
         width:100%;
         margin: 0 auto;
+    }
+    .custom-nav-css li a.active {
+        color:white;
+        background-color: rgb(128, 0, 0);
     }
 
 }
